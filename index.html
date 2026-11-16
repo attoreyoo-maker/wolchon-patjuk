@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>월촌팥죽 | 김제 33년 전통 팥죽 맛집</title>
+<meta name="description" content="33년 전통, 김제에서 검증된 팥죽 한 그릇. 월촌팥죽 - 전북 김제시 동서3길 54, 063-544-5674">
+<meta property="og:title" content="월촌팥죽 | 김제 33년 전통 팥죽">
+<meta property="og:description" content="맛있Go, 진하Go, 넉넉하Go! 매일 아침 직접 삶는 팥죽·팥칼국수·흑임자죽">
+<meta property="og:image" content="img/out1.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+KR:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bean:#5a1f1a; --bean-d:#3b1210; --red:#9c2f27; --cream:#faf4ea; --paper:#f2e8d7;
+  --gold:#c89b4a; --ink:#2b1a17; --mute:#7a6560;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{font-family:'Noto Sans KR',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.8;word-break:keep-all}
+img{display:block;max-width:100%}
+a{color:inherit}
+.serif{font-family:'Noto Serif KR',serif}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+
+/* nav */
+nav{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(59,18,16,.92);backdrop-filter:blur(8px)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-family:'Noto Serif KR',serif;font-weight:900;color:#fff;font-size:1.25rem;text-decoration:none;letter-spacing:.04em}
+.logo span{color:var(--gold)}
+nav ul{display:flex;gap:26px;list-style:none}
+nav ul a{color:#f1e3cf;text-decoration:none;font-size:.95rem}
+nav ul a:hover{color:var(--gold)}
+.call{background:var(--gold);color:var(--bean-d);font-weight:700;padding:7px 16px;border-radius:99px;text-decoration:none;font-size:.9rem}
+
+/* hero */
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;color:#fff;position:relative;
+  background:linear-gradient(rgba(40,10,8,.62),rgba(40,10,8,.72)),url(img/out1.jpg) center/cover}
+.hero .in{padding:110px 22px 80px}
+.badge{display:inline-block;border:1px solid var(--gold);color:var(--gold);padding:5px 18px;border-radius:99px;font-size:.9rem;letter-spacing:.2em;margin-bottom:26px}
+.hero h1{font-family:'Noto Serif KR',serif;font-weight:900;font-size:clamp(2.8rem,9vw,5.4rem);line-height:1.15;letter-spacing:.06em}
+.hero h1 small{display:block;font-size:.34em;font-weight:500;letter-spacing:.12em;margin-top:18px;color:#f1e3cf}
+.hero .slogan{margin-top:30px;font-size:clamp(1.1rem,3vw,1.5rem);color:var(--gold);font-family:'Noto Serif KR',serif}
+.btns{margin-top:38px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 28px;border-radius:99px;text-decoration:none;font-weight:500;transition:.2s}
+.btn.p{background:var(--gold);color:var(--bean-d)}
+.btn.p:hover{background:#dcb064}
+.btn.o{border:1px solid #fff;color:#fff}
+.btn.o:hover{background:#fff;color:var(--bean-d)}
+
+/* sections */
+section{padding:96px 0}
+.eyebrow{color:var(--red);letter-spacing:.3em;font-size:.85rem;font-weight:700;text-align:center}
+h2.title{font-family:'Noto Serif KR',serif;font-weight:900;font-size:clamp(1.9rem,5vw,2.8rem);text-align:center;margin:8px 0 14px;color:var(--bean)}
+.rule{width:44px;height:3px;background:var(--gold);margin:0 auto 52px}
+
+/* story */
+.story{background:var(--paper)}
+.story .grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}
+.cook{position:relative;max-width:340px;margin:0 auto;border-radius:10px;overflow:hidden;box-shadow:0 18px 40px rgba(59,18,16,.25);background:#000}
+.cook video{width:100%;aspect-ratio:9/16;object-fit:cover;display:block}
+.cook span{position:absolute;left:0;right:0;bottom:0;padding:34px 16px 14px;text-align:center;color:#fff;font-family:'Noto Serif KR',serif;font-weight:700;background:linear-gradient(transparent,rgba(0,0,0,.75))}
+.story h3{font-family:'Noto Serif KR',serif;font-size:1.6rem;line-height:1.5;color:var(--bean);margin-bottom:22px}
+.story p{margin-bottom:14px;color:#4a3733}
+.gen{display:flex;gap:14px;margin:26px 0}
+.gen div{flex:1;background:#fff;border-top:3px solid var(--gold);padding:14px 8px;text-align:center;border-radius:4px}
+.gen b{display:block;font-family:'Noto Serif KR',serif;font-size:1.5rem;color:var(--red)}
+.gen span{font-size:.85rem;color:var(--mute)}
+.quote{font-family:'Noto Serif KR',serif;font-size:1.25rem;color:var(--red);font-weight:700;margin-top:24px}
+
+/* menu */
+.menu .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.card{background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 8px 28px rgba(59,18,16,.12);transition:.25s}
+.card:hover{transform:translateY(-6px)}
+.card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.card .b{padding:22px 24px 28px}
+.card h3{font-family:'Noto Serif KR',serif;font-size:1.35rem;color:var(--bean);display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.card h3 em{font-style:normal;color:var(--red);font-size:1.15rem}
+.card{display:flex;flex-direction:column}
+.card .b{flex:1;display:flex;flex-direction:column}
+.card h3{padding-bottom:12px;border-bottom:1px solid #eadfcc}
+.card p{margin-top:14px;font-size:.94rem;color:var(--mute);line-height:1.7;min-height:3.4em;text-wrap:balance}
+.tags{margin-top:auto;padding-top:16px;display:flex;gap:8px;flex-wrap:wrap}
+.tags span{background:var(--paper);color:var(--bean);font-size:.82rem;font-weight:500;padding:4px 12px;border-radius:99px}
+
+/* gallery */
+.gallery{background:var(--bean-d);color:#fff}
+.gallery h2.title{color:#fff}
+.gallery .eyebrow{color:var(--gold)}
+.g{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.shorts{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:640px;margin:14px auto 0}
+.shorts figure{border-radius:6px;overflow:hidden;background:#000}
+.shorts video{width:100%;aspect-ratio:9/16;display:block;background:#000}
+.shorts figcaption{padding:10px 14px;font-size:.9rem;text-align:center;background:#2a0c0a}
+.g figure{position:relative;overflow:hidden;border-radius:6px;aspect-ratio:4/3}
+.g img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.g figure:hover img{transform:scale(1.06)}
+.g figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 10px;background:linear-gradient(transparent,rgba(0,0,0,.7));font-size:.9rem}
+
+/* info */
+.info .grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+.table{background:#fff;border-radius:8px;padding:10px 28px;box-shadow:0 8px 28px rgba(59,18,16,.1)}
+.row{display:flex;gap:18px;padding:18px 0;border-bottom:1px solid #eadfcc}
+.row:last-child{border:0}
+.row dt{width:78px;flex:none;font-weight:700;color:var(--red)}
+.row dd a{text-decoration:none;font-weight:700}
+.hours span{display:flex;justify-content:space-between;gap:20px}
+.hours .off{color:var(--red);font-weight:500}
+.park{position:relative;border-radius:8px;overflow:hidden;box-shadow:0 8px 28px rgba(59,18,16,.18)}
+.park img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.park div{position:absolute;left:14px;bottom:14px;background:var(--gold);color:var(--bean-d);font-weight:700;padding:7px 16px;border-radius:99px;font-size:.92rem}
+.naver{margin-top:22px;display:block;text-align:center;background:#03c75a;color:#fff;font-weight:700;padding:15px;border-radius:8px;text-decoration:none}
+.naver:hover{background:#02b350}
+
+footer{background:#220a09;color:#c9b4a8;text-align:center;padding:42px 22px;font-size:.9rem}
+footer b{display:block;font-family:'Noto Serif KR',serif;color:#fff;font-size:1.2rem;margin-bottom:8px}
+
+/* fixed mobile call */
+.fab{display:none}
+
+@media(max-width:820px){
+  nav ul{display:none}
+  section{padding:68px 0}
+  .story .grid,.info .grid{grid-template-columns:1fr;gap:34px}
+  .menu .cards{grid-template-columns:1fr;max-width:460px;margin:0 auto}
+  .g{grid-template-columns:1fr 1fr}
+  .fab{display:block;position:fixed;right:16px;bottom:16px;z-index:60;background:var(--red);color:#fff;text-decoration:none;font-weight:700;padding:14px 22px;border-radius:99px;box-shadow:0 6px 18px rgba(0,0,0,.35)}
+  .row{flex-direction:column;gap:2px}
+  .table{padding:6px 20px}
+}
+.fade{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}
+.fade.on{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top">월촌<span>팥죽</span></a>
+    <ul>
+      <li><a href="#story">이야기</a></li>
+      <li><a href="#menu">메뉴</a></li>
+      <li><a href="#gallery">매장</a></li>
+      <li><a href="#info">오시는 길</a></li>
+    </ul>
+    <a class="call" href="tel:0635445674">063-544-5674</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="in">
+    <div class="badge">SINCE 1992 · 김제</div>
+    <h1>월촌팥죽<small>33년 전통, 김제에서 검증된 팥죽 한 그릇</small></h1>
+    <p class="slogan">"맛있Go, 진하Go, 넉넉하Go!"</p>
+    <div class="btns">
+      <a class="btn p" href="#menu">메뉴 보기</a>
+      <a class="btn o" href="#info">오시는 길</a>
+    </div>
+  </div>
+</header>
+
+<section class="story" id="story">
+  <div class="wrap">
+    <div class="eyebrow">OUR STORY</div>
+    <h2 class="title">변하지 않는 손맛</h2>
+    <div class="rule"></div>
+    <div class="grid fade">
+      <div class="cook"><video src="video/cooking.mp4" poster="video/cooking.jpg" autoplay muted loop playsinline preload="metadata" aria-label="새알팥죽을 끓이는 모습"></video><span>매일 아침, 직접 끓입니다</span></div>
+      <div>
+        <h3>바뀐 건 사람뿐,<br>맛은 그대로입니다.</h3>
+        <p>월촌팥죽은 33년 전, 화려한 인테리어도 요란한 홍보도 없이 시작되었습니다. 오직 매일 아침 정성껏 삶은 팥 한 솥, 그리고 변하지 않는 손맛 하나로 동네 사람들의 발길을 모았습니다.</p>
+        <p>매일 같은 시간에 팥을 씻고, 같은 불 앞에 서고, 같은 마음으로 한 그릇을 내는 그 방식 그대로를 이어왔습니다. 지금도 매일 아침 직접 팥을 삶는 것부터 하루를 시작합니다.</p>
+        <div class="gen">
+          <div><b>20년</b><span>1대 주인장</span></div>
+          <div><b>13년</b><span>2대 주인장</span></div>
+          <div><b>2025.11~</b><span>3대 주인장</span></div>
+        </div>
+        <p>33년의 세월이 부끄럽지 않도록, 오늘 주문하신 한 그릇에도 최선을 다하겠습니다. 오래된 단골 손님도, 처음 오시는 분들도 한 그릇 드시면 느끼실 수 있을 겁니다.</p>
+        <p class="quote">김제의 전통 맛집, 월촌팥죽</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <div class="wrap">
+    <div class="eyebrow">MENU</div>
+    <h2 class="title">대표 메뉴</h2>
+    <div class="rule"></div>
+    <div class="cards">
+      <article class="card fade">
+        <img src="img/kalguksu.jpg" alt="팥칼국수" loading="lazy">
+        <div class="b">
+          <h3>팥칼국수 <em>8,000원</em></h3>
+          <p>쫄깃한 면발에 깊고 구수한 팥 고유의 풍미를 그대로 담았습니다.</p>
+          <div class="tags"><span>쫄깃한 면발</span><span>구수한 팥</span></div>
+        </div>
+      </article>
+      <article class="card fade">
+        <img src="img/saealpat.jpg" alt="새알팥죽" loading="lazy">
+        <div class="b">
+          <h3>새알팥죽 <em>10,000원</em></h3>
+          <p>손수 빚은 쫄깃한 새알심과 진한 팥죽이 든든하게 어우러집니다.</p>
+          <div class="tags"><span>손수 빚은 새알심</span><span>든든한 한 끼</span></div>
+        </div>
+      </article>
+      <article class="card fade">
+        <img src="img/heukimja.jpg" alt="흑임자죽" loading="lazy">
+        <div class="b">
+          <h3>흑임자죽 <em>10,000원</em></h3>
+          <p>첫 한 숟가락부터 부드럽고 진한 고소함이 입안 가득 퍼집니다.</p>
+          <div class="tags"><span>부드러운 목넘김</span><span>진한 고소함</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="eyebrow">STORE</div>
+    <h2 class="title">매장 둘러보기</h2>
+    <div class="rule"></div>
+    <div class="g">
+      <figure class="fade"><img src="img/out1.jpg" alt="월촌팥죽 외부" loading="lazy"><figcaption>월촌팥죽 입구</figcaption></figure>
+      <figure class="fade"><img src="img/out2.jpg" alt="월촌팥죽 매장 외부" loading="lazy"><figcaption>매장 외부</figcaption></figure>
+      <figure class="fade"><img src="img/in1.jpg" alt="매장 내부" loading="lazy"><figcaption>아늑한 매장 내부</figcaption></figure>
+      <figure class="fade"><img src="img/in2.jpg" alt="테이블 좌석" loading="lazy"><figcaption>테이블 좌석</figcaption></figure>
+    </div>
+    <div class="shorts">
+      <figure class="fade"><video controls playsinline preload="none" poster="video/short1.jpg"><source src="video/short1.mp4" type="video/mp4"></video><figcaption>월촌팥죽 소개 영상 1</figcaption></figure>
+      <figure class="fade"><video controls playsinline preload="none" poster="video/short2.jpg"><source src="video/short2.mp4" type="video/mp4"></video><figcaption>월촌팥죽 소개 영상 2</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="info" id="info">
+  <div class="wrap">
+    <div class="eyebrow">VISIT US</div>
+    <h2 class="title">오시는 길</h2>
+    <div class="rule"></div>
+    <div class="grid">
+      <div class="fade">
+        <dl class="table">
+          <div class="row"><dt>주소</dt><dd>전북 김제시 동서3길 54</dd></div>
+          <div class="row"><dt>전화</dt><dd><a href="tel:0635445674">063) 544-5674</a></dd></div>
+          <div class="row"><dt>영업시간</dt><dd class="hours">
+            <span>월·수·목·금·토 <b>11:00 ~ 15:00</b></span>
+            <span>화요일 <b>11:00 ~ 17:00</b></span>
+            <span class="off">일요일 휴무</span>
+          </dd></div>
+          <div class="row"><dt>주차</dt><dd>식당 바로 옆 무료 공영주차장</dd></div>
+        </dl>
+        <a class="naver" href="https://buly.kr/E7AsMAc" target="_blank" rel="noopener">네이버 플레이스에서 길찾기 · 리뷰 보기 →</a>
+      </div>
+      <div class="park fade">
+        <img src="img/parking.jpg" alt="식당 바로 옆 무료 공영주차장" loading="lazy">
+        <div>🅿 식당 바로 옆 무료 공영주차장</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <b>월촌팥죽</b>
+  전북 김제시 동서3길 54 · 063) 544-5674<br>
+  © 월촌팥죽. 33년 전통, 3대째 이어갑니다.
+</footer>
+
+<a class="fab" href="tel:0635445674">📞 전화하기</a>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.fade').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
